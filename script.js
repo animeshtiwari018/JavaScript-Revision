@@ -1,8 +1,8 @@
 // // Basic Printing on console
-// console.log("Animesh");
+console.log("Animesh");
 
 // // Basic Printing of Alert
-// alert("Hii myself Animesh");
+alert("Hii myself Animesh");
 
 // Conversion of the number to string 
 let valueNumber = 8;
