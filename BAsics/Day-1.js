@@ -19,8 +19,8 @@ console.log(++value);
 console.log(value);
 // it increase first and then use
 
-let num1 = Symbol("5");
-let num2 = Symbol("5");
+let numA = Symbol("5");
+let numB = Symbol("5");
 // console.log(num1 === num2);
 
 // ****Postfix operation****
@@ -65,3 +65,4 @@ myFunction();
 console.log("animesh Tiwari");
 
 console.log("avinash");
+
