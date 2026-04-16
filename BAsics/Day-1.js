@@ -1,16 +1,16 @@
 // ******************Operations*************************
 
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2**2); 
-console.log(2/2);
-console.log(2%2);
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 ** 2);
+console.log(2 / 2);
+console.log(2 % 2);
 
 // output of this will be 122 because 1 is also get converted in string becuase of two strings are there and it get concanate with them
 console.log(1 + "2" + "2");
 console.log("1" + 2 + "2"); /* output: 122 */
-console.log(1 + 2 + "2");   /* output: 32 (because of operator presedence*/
+console.log(1 + 2 + "2"); /* output: 32 (because of operator presedence*/
 
 // increment operator
 //  ****Prefix operation****
@@ -43,12 +43,11 @@ console.log(num1 === num2);
 
 // Refrence (Non-Primitive) (Array, Objects, Functions)
 //              // ****Array****
-let users = ["Animesh","Hitesh","Bravo","Shubh"];
+let users = ["Animesh", "Hitesh", "Bravo", "Shubh"];
 console.log(users);
 
 //    ****Objects****
 const userData = {
-<<<<<<< HEAD
   user: "Animesh",
   id: 101,
   email: "animeshtiwari@gmail.com",
@@ -63,13 +62,6 @@ let myFunction = function () {
 };
 myFunction();
 
-
-
 console.log("animesh Tiwari");
-=======
-    user = "Animesh";
-    id = 101;
-    email = "animeshtiwari@gmail.com"
-}
-console.log(userData);
->>>>>>> 1608e489b1a20bcf8aeda08f3633926c5b6f873b
+
+console.log("avinash");
