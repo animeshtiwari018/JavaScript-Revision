@@ -10,3 +10,13 @@ let valueString = String(valueNumber);
 
 console.log(valueString);
 console.log(typeof "valueNumber");
+
+// conversion from boolean to number
+let isLogged = true;
+
+
+console.log(isLogged);
+console.log(typeof "isLogged");
+
+let isLoggedNumber = Number(isLogged);
+console.log(isLoggedNumber);
