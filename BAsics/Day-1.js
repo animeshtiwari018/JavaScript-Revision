@@ -37,7 +37,9 @@ let userName;
 console.log(userName);
 
 // example of symbol
-// le
+let num1 = Symbol("5");
+let num2 = Symbol("5");
+console.log(num1 === num2);
 
 // Refrence (Non-Primitive) (Array, Objects, Functions)
 //              // ****Array****
@@ -46,6 +48,7 @@ console.log(users);
 
 //    ****Objects****
 const userData = {
+<<<<<<< HEAD
   user: "Animesh",
   id: 101,
   email: "animeshtiwari@gmail.com",
@@ -63,3 +66,10 @@ myFunction();
 
 
 console.log("animesh Tiwari");
+=======
+    user = "Animesh";
+    id = 101;
+    email = "animeshtiwari@gmail.com"
+}
+console.log(userData);
+>>>>>>> 1608e489b1a20bcf8aeda08f3633926c5b6f873b
