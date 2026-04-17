@@ -56,7 +56,7 @@ console.log(userData);
 
 // ****Function****
 let myFunction = function () {
-  for (i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     console.log("Animesh Tiwari");
   }
 };
@@ -65,9 +65,9 @@ myFunction();
 
 
 let love = function() {
-  for( i = 0; i <= 10; i++){
+  for( let i = 0; i <= 10; i++){
     console.log("I Love Coding but sometimes it is so irritating :)");
   }
-}
+};
 
 love();
