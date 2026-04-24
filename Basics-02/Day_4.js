@@ -17,3 +17,10 @@ const Marvel_hero = ["thor", "irconman", "spiderman"];
 // **This is the right way to store two or more array in one using spread method
 // const new_arr = [...DC_hero, ...Marvel_hero];
 // console.log(new_arr);
+
+
+// ***Basically this is used to fix the mixed arr in one 
+// note :- it is use to fix nested array which flat the nested array in better structure 
+const another_array = [1, 2, 3, [4, 5, 6, 7],8,9,0];
+const real_another_array = another_array.flat(2);
+console.log(real_another_array);
