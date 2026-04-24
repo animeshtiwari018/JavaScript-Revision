@@ -12,3 +12,8 @@ const Marvel_hero = ["thor", "irconman", "spiderman"];
 
 // DC_hero.concat(Marvel_hero);
 // console.log(DC_hero);
+
+
+// **This is the right way to store two or more array in one using spread method
+// const new_arr = [...DC_hero, ...Marvel_hero];
+// console.log(new_arr);
