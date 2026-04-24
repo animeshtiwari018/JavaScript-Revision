@@ -21,6 +21,11 @@ const Marvel_hero = ["thor", "irconman", "spiderman"];
 
 // ***Basically this is used to fix the mixed arr in one 
 // note :- it is use to fix nested array which flat the nested array in better structure 
-const another_array = [1, 2, 3, [4, 5, 6, 7],8,9,0];
-const real_another_array = another_array.flat(2);
-console.log(real_another_array);
+// const another_array = [1, 2, 3, [4, 5, 6, 7],8,9,0];
+// const real_another_array = another_array.flat(2);
+// console.log(real_another_array);
+
+console.log(Array.isArray("Animesh"));
+console.log(Array.from("Animesh")); 
+//this give a empty array in output because in from we have to give it the main value which we want to get convert 
+console.log(Array.from({name: "animesh"}));
