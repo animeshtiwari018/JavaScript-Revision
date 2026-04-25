@@ -27,15 +27,24 @@
 // ****Function using objects
 
 // this only add 1 value in num 1 = 20;
-const calculatePrice = function (num1) {
-  return num1;
-};
-console.log(calculatePrice(20, 40));
+// const calculatePrice = function (num1) {
+//   return num1;
+// };
+// console.log(calculatePrice(20, 40));
 
 // so this is called rest operator (...num) rest and spread both of them has same syntax
-const newCalculatePrice = function (...num1) {
-  return num1;
-};
-console.log(newCalculatePrice(20, 40));
+// const newCalculatePrice = function (...num1) {
+//   return num1;
+// };
+// console.log(newCalculatePrice(20, 40));
 
+// const user = {
+//   firstName: "Animesh",
+//   lastName: "Tiwari",
+// };
 
+// const output = function (otherOutput) {
+//   console.log(`The first name of user is ${otherOutput.firstName}`);
+// };
+
+// output(user);
