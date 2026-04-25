@@ -48,3 +48,15 @@
 // };
 
 // output(user);
+
+
+
+// Immediately invoked Function Expressions 
+const user = function() {
+  console.log(`DB is connected`)
+} ();
+
+
+(() => {
+  console.log("Db two is connected");
+})();
