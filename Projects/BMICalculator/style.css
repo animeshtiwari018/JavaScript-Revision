@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+}
+
+.cal-button{
+    height: 30px;
+    width: 30%;
+    border: solid black 0.8px;
+
+}
