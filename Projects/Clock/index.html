@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+
+      .main {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #clock {
+        background-color: orange;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 20px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="banner"><span>The current Time</span></div>
+      <div id="clock"></div>
+    </div>
+
+    <script>
+      const Clock = document.getElementById("clock");
+
+      setInterval(function () {
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+      }, 1000);
+    </script>
+  </body>
+</html>
