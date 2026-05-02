@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Animesh Tiwari</h2>
+    <p>I am Full Stack Developer</p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+      const startBtn = document.querySelector("#start");
+      const stopBtn = document.querySelector("#stop");
+
+      let intervalId = function () {
+        return setInterval(function () {
+          console.log("animesh");
+        }, 100);
+      };
+
+      let currentId;
+
+      const startInterval = function () {
+        if (currentId) clearInterval(currentId);
+        currentId = intervalId();
+      };
+
+      const stopInterval = function () {
+        if (currentId) {
+          clearInterval(currentId);
+          currentId = null;
+        }
+      };
+
+      startBtn.addEventListener("click", startInterval);
+      stopBtn.addEventListener("click", stopInterval);
+    </script>
+  </body>
+</html>
