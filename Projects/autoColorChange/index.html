@@ -20,7 +20,11 @@
         }
         return color;
       };
+
+      //   ***Variable to store Set and clear interval
       let intervalId;
+
+      //   ***Function to change color****
       const startChange = function () {
         document.body.style.backgroundColor = randomColor();
         if (!intervalId) {
@@ -28,13 +32,17 @@
         }
       };
 
+      // ****function to stop change****
       const stopChange = function () {
         clearInterval(intervalId);
         intervalId = null;
       };
+
+      //   ***querySelector for choosing button****
       let startBtn = document.querySelector("#start");
       let stopBtn = document.querySelector("#stop");
 
+      // ****click eventListener****
       startBtn.addEventListener("click", startChange);
       stopBtn.addEventListener("click", stopChange);
     </script>
