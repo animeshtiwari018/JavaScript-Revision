@@ -6,3 +6,18 @@ new Promise(function (resolve, reject) {
 }).then(function () {
   console.log("Async 1 is resolved");
 });
+
+const promiseThree = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    console.log("Async 3 is done");
+    resolve({
+      username: "Animesh Tiwari",
+      email: "animeshtiwari178@gmail.coms",
+    });
+  }, 1000);
+});
+
+promiseThree.then(function (user) {
+  console.log("user is called");
+  console.log(user.username);
+});
