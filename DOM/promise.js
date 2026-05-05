@@ -22,9 +22,24 @@
 //   console.log(user.username);
 // });
 
-const URL = fetch(
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=",
-)
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.log("Error", error))
+// const URL = fetch(
+//   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=",
+// )
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.log("Error", error));
+
+const user = {
+  name: "Animesh",
+  age: 19,
+  city: "Jaipur",
+};
+
+// without destructuring
+const obj1 = user.name;
+const obj2 = user.age;
+const obj3 = user.city;
+
+// with destructuring
+const { name, age, city } = user;
+console.log(name, age, city);
