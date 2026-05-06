@@ -29,17 +29,33 @@
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log("Error", error));
 
-const user = {
-  name: "Animesh",
-  age: 19,
-  city: "Jaipur",
-};
+// const user = {
+//   name: "Animesh",
+//   age: 19,
+//   city: "Jaipur",
+// };
 
-// without destructuring
-const obj1 = user.name;
-const obj2 = user.age;
-const obj3 = user.city;
+// // without destructuring
+// const obj1 = user.name;
+// const obj2 = user.age;
+// const obj3 = user.city;
 
-// with destructuring
-const { name, age, city } = user;
-console.log(name, age, city);
+// // with destructuring
+// const { name, age, city } = user;
+// console.log(name, age, city);
+
+// Spread operators
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [...arr1, 6, 7, 8];
+// console.log(arr2);
+
+// Rest operators
+// const arr1 = (1, 2, 3, 4);
+// const arr2 = [5, 6, 7, ...arr1];
+// console.log(arr2);
+
+const str = "hello";
+console.log(...str);
+
+const arr1 = [1, 2, 3, 4];
+console.log(...arr1);
