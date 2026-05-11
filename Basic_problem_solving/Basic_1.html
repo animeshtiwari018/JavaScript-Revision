@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ****Reverse a array (In Place)
+
+      class Solution {
+        // Function to reverse the array in place
+        reverse(arr) {
+          let start = 0;
+          let end = arr.length - 1;
+
+          while (start < end) {
+            let temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
+          }
+        }
+      }
+
+      let sol = new Solution();
+
+      let arr = [1, 2, 3, 4, 5];
+
+      sol.reverse(arr);
+
+      console.log(arr);
+    </script>
+  </body>
+</html>
