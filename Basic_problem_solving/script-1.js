@@ -35,3 +35,16 @@ console.log(userName);
 // }
 
 // console.log(areaRectangle());
+
+// **********if-else************
+
+function checkNumber() {
+  if (input % 2 === 0) {
+    console.log("Number is even");
+  } else {
+    console.log("Number is odd");
+  }
+}
+
+let input = Number(prompt("Enter number:"));
+console.log(checkNumber(input));
