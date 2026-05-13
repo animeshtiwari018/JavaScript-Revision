@@ -24,3 +24,14 @@ console.log(userName);
 //   return sum;
 // }
 // console.log(numberSum());
+
+// ****Area of Rectangle****
+// function areaRectangle() {
+//   let length = 20;
+//   let breath = 30;
+//   let area = length * breath;
+
+//   return area;
+// }
+
+// console.log(areaRectangle());
