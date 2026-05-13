@@ -8,7 +8,19 @@ console.log(userName);
 //     let a = 1;
 //     let b = 2;
 //     sum = a + b;
-    
+
 //     return sum;
+// }
+// console.log(numberSum());
+
+// **Add two numbers with user input****
+
+// function numberSum() {
+//   let sum = 0;
+//   let number1 = Number(prompt("Enter your number a:"));
+//   let number2 = Number(prompt("Entr your number b:"));
+//   sum = number2 + number1;
+
+//   return sum;
 // }
 // console.log(numberSum());
