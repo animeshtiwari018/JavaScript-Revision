@@ -1,0 +1,127 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family:
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background: var(--bg);
+  color: #111827;
+}
+.container {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 16px;
+}
+h1 {
+  margin: 0 0 16px;
+}
+.cart {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+}
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
+}
+.product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.product-details {
+  flex: 1;
+}
+.product-title {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.product-price {
+  margin: 0;
+  color: var(--muted);
+}
+.product-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-controls button {
+  background: #eef2ff;
+  border: 1px solid #e0e7ff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.product-controls .remove {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  padding: 6px;
+}
+.qty {
+  width: 56px;
+  padding: 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  text-align: center;
+}
+.summary {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
+}
+.summary h2 {
+  margin-top: 0;
+}
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: var(--muted);
+}
+.summary .total {
+  font-size: 18px;
+  color: #111827;
+}
+#checkout-button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .cart {
+    grid-template-columns: 1fr;
+  }
+  .summary {
+    order: 2;
+  }
+}

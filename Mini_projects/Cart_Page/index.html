@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Shopping Cart</h1>
+
+      <section class="cart">
+        <div class="cart-items" id="cart-items">
+          <div class="product" data-id="1">
+            <img src="https://via.placeholder.com/80" alt="Item 1" />
+            <div class="product-details">
+              <h3 class="product-title">Classic Mug</h3>
+              <p class="product-price" data-price="12.99">$12.99</p>
+            </div>
+            <div class="product-controls">
+              <button class="qty-decrease">-</button>
+              <input class="qty" type="number" min="1" value="1" />
+              <button class="qty-increase">+</button>
+              <button class="remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="product" data-id="2">
+            <img src="https://via.placeholder.com/80" alt="Item 2" />
+            <div class="product-details">
+              <h3 class="product-title">Notebook</h3>
+              <p class="product-price" data-price="7.5">$7.50</p>
+            </div>
+            <div class="product-controls">
+              <button class="qty-decrease">-</button>
+              <input class="qty" type="number" min="1" value="2" />
+              <button class="qty-increase">+</button>
+              <button class="remove">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="summary">
+          <h2>Order Summary</h2>
+          <p>Subtotal: <span id="subtotal">$0.00</span></p>
+          <p>Tax (5%): <span id="tax">$0.00</span></p>
+          <p class="total">Total: <strong id="total">$0.00</strong></p>
+          <button id="checkout-button">Checkout</button>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
