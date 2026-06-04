@@ -10,9 +10,29 @@
     <div id="main_box">
       <h2>Expense Tracker</h2>
       <div class="form-row">
-        <input type="text" placeholder="Expense Name" class="input" />
-        <input type="number" placeholder="amount" class="input" />
+        <input
+          type="text"
+          placeholder="Expense Name"
+          class="input"
+          id="expenseName"
+        />
+        <input
+          type="number"
+          placeholder="amount"
+          class="input"
+          id="
+        expenseAmount"
+        />
         <button id="submit">Submit</button>
+      </div>
+
+      <h2>Expenses</h2>
+      <ul id="expense-list">
+        <!-- Expenses will be added Dynamically -->
+      </ul>
+
+      <div id="total">
+        <h3>Total: <span id="total-amount">0.00</span></h3>
       </div>
     </div>
   </body>
