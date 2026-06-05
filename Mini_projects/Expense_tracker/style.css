@@ -67,8 +67,22 @@ body {
 }
 
 #total {
-  background-color:;
+  background-color: #181a17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
 }
-#expense-list {
-  v;
+h3 {
+  background-color: #181a17;
+  color: white;
+}
+
+#total-amount {
+  background-color: #181a17;
+  color: white;
+}
+
+#expense_heading {
+  margin-top: 9px;
 }
