@@ -86,3 +86,54 @@ h3 {
 #expense_heading {
   margin-top: 9px;
 }
+#expense-list {
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+.newLi {
+  background-color: #2c2f2c;
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp-name {
+  background-color: transparent;
+  flex: 1;
+}
+
+.exp-amt {
+  background-color: transparent;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #4caf50;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
+    height: 100px;
+    border-radius: 8px;
+    ;
+}
+
+.exp-amt {
+    color: white;
+}
